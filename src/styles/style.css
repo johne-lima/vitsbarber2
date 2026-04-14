@@ -102,9 +102,10 @@
   .hero-bg {
       position: absolute;
       inset: 0;
-      background:
-          radial-gradient(ellipse 60% 80% at 70% 50%, rgba(212, 168, 67, 0.08) 0%, transparent 70%),
-          radial-gradient(ellipse 40% 60% at 20% 30%, rgba(212, 168, 67, 0.04) 0%, transparent 60%);
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../imgs/exemplo-corte-de-cabelo.jpg);
+      background-position: 60%;
+      background-repeat: no-repeat;
+      background-size: cover;
   }
 
   /* Decorative vertical lines */
@@ -386,7 +387,9 @@
 
   /* ========== PLANS ========== */
   .plans-section {
-      background: var(--dark2);
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../imgs/barbearia-local.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
       padding: 100px 48px;
   }
 
@@ -435,7 +438,7 @@
   }
 
   .plan-card.featured {
-      background: rgba(212, 168, 67, 0.08);
+      background: var(--dark3);
       border-color: rgba(212, 168, 67, 0.5);
   }
 
